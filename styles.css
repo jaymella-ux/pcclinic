@@ -1,0 +1,200 @@
+ *{
+    box-sizing: border-box;
+ }
+
+ body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: hsl(180, 14%, 97%);
+ }
+
+header {
+    background-color: #17211e;
+    color: white;
+    padding: 22px 45px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 30px;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}   
+
+main {
+    padding: 25px 45px 40px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 28px;
+}
+
+.services {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 28px;
+}
+
+.card {
+    background-color: #f5f7f5;
+    padding: 20px;
+    border-left: 6px solid #16805f;
+    border-radius: 10px;
+    flex: 1;
+    height: 220px;
+}
+
+.icon {
+    width: 85px;
+    height: 85px;
+    background-color: #e3f2ec;
+    border-radius: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.card h3 {
+    font-size: 23px;
+    margin-bottom: 22px;
+}
+
+.card p {
+    font-size: 20px;
+    font-weight: 20px;
+    color: #16805f;
+}
+
+table {
+    width: 450px;
+    border-collapse: collapse;
+    margin-bottom: 28px;
+}
+
+th, td {
+    border: 2px solid #5ddad7;
+    padding: 10px 20px;
+    text-align: left;
+    font-size: 19px;
+}
+
+th {
+    background-color: #5ddad7;
+}
+
+
+form {
+    font-size: 19px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+legend {
+    color: #16805f;
+    font-weight: bold;
+}
+
+button {
+    background-color: #16805f;
+    color: white;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 7px;
+    font-size: 19px;
+}
+
+footer {
+    background-color: #17211e;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    font-size: 19px;
+}
+
+@media (max-width: 768px) {
+   header {
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+      align-items: center;
+   }
+   header h1 {
+      font-size: 25px;
+   }
+   nav {
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+   nav a {
+      font-size: 16px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+    .services {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+        min-height: 220px;
+    }
+    table {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    fieldset {
+        width: 100%;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    footer {
+        padding: 20px;
+        font-size: 16px;
+    }
+}
